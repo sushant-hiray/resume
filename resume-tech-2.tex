@@ -1,6 +1,7 @@
 \documentclass[margin,11pt]{resume}
 \usepackage{hyperref}
-
+\usepackage{amsmath}
+\newcommand{\BigO}[1]{\ensuremath{\operatorname{O}\bigl(#1\bigr)}}
 \begin{document}
 \begin{resume}
 
@@ -19,18 +20,40 @@
  \textbf{  INAO} Astronomy National Top 1 \% \hfill \emph{2007,2010} \\
  \textbf{  INMO} Mathematics National Top 1 \% \hfill \emph{2009,2010} \\
 \end{list2}
-\section{\mysidestyle Research\\And\\Internships }
-\textbf{Keyword Detection in Continuous Speech} \\
-    \textsl{Guide : Prof. Ganesh Ramakrishna} \hfill \emph{Summer 2013}
+\section{\mysidestyle Research\\Projects\\And\\Internships }
+
+\textbf{Malware Detection in Android} \\
+	\textsl{Guide: Prof. Mythili Vukutru} \hfill \emph{Ongoing}
 \begin{list2}
-\item Developed a \emph{Voice based Application} in \emph{Spring MVC} framework for implementing a voice based discussion forum. 
-\item Looked into possible usage of \emph{Markov Matrices} for keyword detection in recorded voice messages and the subsequent categorization of the messages according to the keyword detected.
+\item Implementing a model for static analysis of permissions used by app. 
+\item Planning to work on analyzing dynamic behavioral patterns to detect malware.
 \end{list2}
-\textbf{Web Developer} at \emph{CourseBrew} \hfill \emph{Autumn 2013} \\
-Developed a prototype of an online education website. Extensively used \emph{DHTMLx} and \emph{Javascript} to create the discussion forum and \emph{dynamic layouts} for various sections of the web application.
+
+\textbf{Web Developer} at \emph{CourseBrew} \hfill \emph{Autumn 2013} 
+\begin{list2}
+\item Developed a prototype of an online education website. Extensively used \emph{DHTMLx} and \emph{Javascript} to create the discussion forum and \emph{dynamic layouts} for various sections of the web application.
+\end{list2}
 
 
 \section{\mysidestyle Academic\\Projects}
+
+\textbf{Sequence Alignment on GPU's} \hfill
+\textsl{Guide : Bernard Menezes} \hfill \emph{Autumn 2013}
+\begin{list2}
+\item Implemented a version Sequence Alignemnt problem in GPU’s. Used a parallel
+Implementation of Needleman-Wunsch algorithm.
+\item Tried the Parallel Prefix and Diagonal based apporach to solve the problem. The
+approch achieved \BigO{n} complexity as compared to \BigO{n\textsuperscript{2}} in the Serial Version.
+\end{list2}
+
+
+\textbf{Handwriting Calculator} \hfill
+    \textsl{Guide : Prof. Varsha Apte} \hfill \emph{Autumn 2012}
+\begin{list2}
+\item A\emph{ handwriting based calculator} which identifies and evaluates mathematical expressions written via hand held input.
+\item Implemented \textbf{Supervised Machine Learning} based on \emph{feature extraction}. 
+\item Used Dynamic Time Warping to find optimal character match from the database and evaluate the expression
+\end{list2}
 
 \textbf{Tum Tum Tracker} \hfill Bus Tracking System \hfill
     \url{http://www.tttracker.in}
@@ -40,13 +63,6 @@ Developed a prototype of an online education website. Extensively used \emph{DHT
 \item Developed the web app using \emph{Google Maps API v3} and asynchronously fetched bus positions and updated them realtime  on the application.
 \end{list2}
 
-\textbf{Handwriting Calculator} \hfill
-    \textsl{Guide : Prof. Varsha Apte} \hfill \emph{Autumn 2012}
-\begin{list2}
-\item A\emph{ handwriting based calculator} which identifies and evaluates mathematical expressions written via hand held input.
-\item Implemented \textbf{Supervised Machine Learning} based on \emph{feature extraction}. 
-\item Used Dynamic Time Warping to find optimal character match from the database and evaluate the expression.
-\end{list2}
 
 \textbf{GIS Contour Plotting}\\
   \textsl{Guide : Prof. Milind Sohoni and Prof. Adsul Bharat} \hfill \emph{Summer 2012}
@@ -55,16 +71,12 @@ Developed a prototype of an online education website. Extensively used \emph{DHT
 \item Used various \emph{kriging} techniques and implemented them efficiently.
 \item Generated \emph{KML} files and overlaid them on \emph{Google Earth} using \emph{python} scripts. \\
 \end{list2}
-\vspace{2mm}
+
 \textbf{8-Point FFT on FPGA}\\ \textsl{Guide: Prof. Ashwin Gumasthe} \hfill \emph{Spring 2013}
 \begin{list2}
 \item Designed and implemented \emph{Fast Fourier Algorithm} on a Field Pro-grammable Gate Array 
 \item Interfaced it with a LED output Display and configured FPGA to get input from the push buttons on the Xilinx SPARTAN board.
 \end{list2}
-
-\textbf{All Terrain Vehicle} \hfill
-\textsl{Institute Technical Summer Project} \hfill \emph{Summer 2012} \\ 
-Designed and custom manufactured an all terrain bot which could be controlled using serial input and was awarded \textbf{Best Technical Project}
 
 
 
